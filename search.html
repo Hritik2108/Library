@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 90%;
+            width: 100%;
+            background-image:url(pngwing.com\ \(3\).png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: local;
+            
+        }
+        .navbar{
+        height: 100vh;
+        width: 100%;
+    }
+    .logo {
+      font-size: 50px;
+      color: aliceblue;
+    }
+    .logo:hover{
+      transform: scale(1.2);
+      color: #274046;
+      transition: .3s;
+    }
+    span{
+      color: #274046;
+    }
+    span:hover{
+      transform: scale(1.2);
+      color: #fff;
+      transition: .3s;
+    }
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 40px;
+      padding-left: 10%;
+      padding-right: 10%;
+    
+    }
+    nav ul li{
+      text-decoration: none;
+      display: inline-block;
+      padding: 20px;
+    }
+    nav ul li a{
+      font-size: 30px;
+      text-decoration: none;
+      color:#fff ;
+      font-weight: bold;
+      -webkit-text-stroke: #274046 1px;
+     
+    }
+    nav ul li a:hover{
+       transform: scale(2);
+      color:#274046;
+      transition: .3s;
+    }
+    nav ul li.active a{
+      color: #274046;
+    }
+    button{
+      font-size: 15px;
+      border: none;
+      background-color: #fff;
+      padding: 12px 30px ;
+      border-radius: 50px;
+      border: solid #274046 2px;
+    }
+    button:hover{
+      border: solid #fff 1px;
+      transform: scale(1.3);
+      cursor: pointer;
+      color: #fff;
+      background-color: #274046;
+
+    }
+    #input{
+      position: absolute;
+      height: 50px;
+      width: 400px;
+      font-size: 20px;
+      left: 40%;
+      top: 20%;
+      border: solid #274046 2px;
+    }
+    #input1{
+      position: absolute;
+      height: 50px;
+      width: 400px;
+      font-size: 20px;
+      left: 40%;
+      top: 27%;
+      border: solid #274046 2px;
+    }
+    
+    #cars{
+      width: 300px;
+      height: 30px;
+      font-size: 20px;
+      left: 40%;
+      top: 33%;
+      position: absolute;
+    }
+    h3{
+      font-size: 30px;
+      left: 28%;
+      top: 33%;
+      position: absolute;
+    }
+    h4{
+      font-size: 30px;
+      left: 34%;
+      top: 20%;
+      position: absolute;
+    }
+    h5{
+      font-size: 30px;
+      left: 33%;
+      top: 27%;
+      position: absolute;
+    }
+    #submit{
+      background:#274046 ;
+      color : white;
+      top: 40%;
+      left: 45%;
+      position: absolute;
+      font-size: 25px;
+      width: 160px;
+      height: 50px;
+    }
+    #submit:hover{
+      cursor: pointer;
+      background-color: #fff;
+      border: solid #274046 2px;
+      color: #274046;
+      transform: scale(1.1);
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+          <h2 class="logo">Lib<span>rary.</span></h2>
+        <ul>
+          <li  ><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li  class="active"><a href="search.html">Search</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html">
+        <button id="boutton" type="button">Login In</button></a>
+        </nav>
+        <input id="input" type="text" placeholder="  Enter book Name">
+        <input id="input1" type="text" placeholder="  Enter Author Name">
+        <h4>Book :</h4>
+        <h5>Author :</h5>
+        <h3>Choose a genre :</h3>
+        <label for="cars"></label>
+  <select name="cars" id="cars">
+    <option value="Fiction">Fiction</option>
+    <option value="Novel">Novel</option>
+    <option value="romantic">Romantic</option>
+    <option value="History">History</option>
+  </select>
+  <input id="submit" type="submit" value="Submit">
+        
+        </div>
+</body>
+</html>

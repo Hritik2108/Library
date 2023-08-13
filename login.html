@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>login form</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            
+             width: 60%;
+             margin-left: 30%;
+        }
+        .logo {
+            margin-top: 30px;
+      font-size: 80px;
+      color: aliceblue;
+      -webkit-text-stroke: 1.5px #274046;
+    }
+    .logo:hover{
+      transform: scale(1.2);
+      color: #274046;
+      transition: .3s;
+      stroke-width: 1px;
+      -webkit-text-stroke: 1.5px #274046;
+    }
+    span{
+      color: #274046;
+    }
+    span:hover{
+      transform: scale(1.2);
+      color: #fff;
+      transition: .3s;
+    }
+    .container{
+        display: flex;
+        background-color: #274046;
+        width: 400px;
+        height: 60px;
+        margin-top: 80px;
+        border-radius: 20px;
+        place-items: center;
+        align-items: center;
+        
+    }
+    
+h2{
+    text-align: center;
+    margin-left: 130px;
+    color: #fff;
+    font-size: 20px;
+}
+.icon {
+    position: absolute;
+    width: 60px;
+    margin-left: 50px;
+    align-items: center;
+}
+.container1{
+        display: flex;
+        background-color:#fff;
+        width: 400px;
+        height: 60px;
+        margin-top: 20px;
+        border-radius: 20px;
+        place-items: center;
+        align-items: center;
+        border: solid 2px #274046;
+        
+    }
+    
+h3{
+    text-align: center;
+    margin-left: 130px;
+    color: #274046;
+    font-size: 20px;
+    text-decoration: none;
+}
+.icon1 {
+    position: absolute;
+    width: 35px;
+    margin-left: 60px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #274046;
+}
+    </style>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0"></body>
+    <center class="logo">Lib<span>rary.</span></center>
+    <center><div class="container">
+        <img class="icon" src="pngwing.com (1).png">
+            <h2>Login With Google</h2>
+    </div></center>
+    <center><div class="container1" >
+        <img class="icon1" src="pngwing.com (2).png">
+            <h3><a href="https://www.facebook.com/"> Login With Facebook</a></h3>
+    </div></center>
+    <br>
+
+    <div class="dropdown-menu">
+        <form class="px-4 py-3">
+          <div class="mb-3">
+            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+              <label class="form-check-label" for="dropdownCheck">
+                Remember me
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">New around here? Sign up</a>
+        <a class="dropdown-item" href="#">Forgot password?</a>
+      </div>
+      
+</body>
+</html>
